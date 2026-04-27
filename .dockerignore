@@ -1,0 +1,43 @@
+# Git
+.git
+.gitignore
+
+# Build artifacts
+bin/
+obj/
+out/
+publish/
+
+# IDE/editor files
+.vs/
+.vscode/
+.idea/
+*.user
+*.rsuser
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Environment and local secrets
+.env
+.env.*
+appsettings.Local.json
+
+# Test outputs
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Node (if frontend files are added)
+node_modules/
+
+# Documentation / misc
+README.md

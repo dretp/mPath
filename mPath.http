@@ -1,0 +1,14 @@
+@mPath_HostAddress = http://localhost:5050
+
+GET {{mPath_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{mPath_HostAddress}}/api/
+Accept: application/json
+
+
+###
+
+GET {{mPath_HostAddress}}/test/testData
+Accept: application/json
