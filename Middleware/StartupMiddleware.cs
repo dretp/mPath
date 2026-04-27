@@ -14,16 +14,20 @@ public static class StartupMiddleware
 {
     public static void MpathRegistry(this IServiceCollection service)
     {
-        
+
         var appConfig = new ConfigurationBuilder()
             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .AddEnvironmentVariables()
             .Build();
+
+        var dbConnection = appConfig["DBConnection"] ?? string.Empty;
+        dbConnection = dbConnection.Trim().Trim('"');
         
         //app configuration
         var mPathConfig = new MpathConfiguration()
         {
             //map app settings.json to crash configuration to be used in app
-            DbConnectionString = appConfig.GetSection("DBConnection").Value ?? "",
+            DbConnectionString = dbConnection,
            
         };
 
