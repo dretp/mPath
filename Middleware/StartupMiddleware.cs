@@ -33,7 +33,6 @@ public static class StartupMiddleware
 
         //Mapping Interface to Services
         service.AddSingleton<IMPathHealthPostgresDatabase, MPathHealthPostgresDatabase>();
-        service.AddSingleton<IPatientService, PatientService>();
         service.AddSingleton<EmployeeUtils>();
         service.AddSingleton<IEmployeeService, EmployeeService>();
         service.AddSingleton<AuthUtil>();

@@ -1,7 +1,6 @@
 using System.Data;
 using System.Text;
 using mPath.Models.Employees;
-using mPath.Models.Patient;
 using mPath.Utils.Base;
 
 namespace mPath.Utils.EmployeeUitls;
